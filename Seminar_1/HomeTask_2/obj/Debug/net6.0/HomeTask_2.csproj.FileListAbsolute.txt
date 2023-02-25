@@ -1,0 +1,15 @@
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/bin/Debug/net6.0/HomeTask_2
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/bin/Debug/net6.0/HomeTask_2.deps.json
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/bin/Debug/net6.0/HomeTask_2.runtimeconfig.json
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/bin/Debug/net6.0/HomeTask_2.dll
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/bin/Debug/net6.0/HomeTask_2.pdb
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.csproj.AssemblyReference.cache
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.AssemblyInfoInputs.cache
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.AssemblyInfo.cs
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.csproj.CoreCompileInputs.cache
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.dll
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/refint/HomeTask_2.dll
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.pdb
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/HomeTask_2.genruntimeconfig.cache
+/Users/imac/Desktop/CS_seminars/Seminar_1/HomeTask_2/obj/Debug/net6.0/ref/HomeTask_2.dll
