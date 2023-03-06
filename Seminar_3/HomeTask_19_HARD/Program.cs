@@ -3,14 +3,7 @@
 // любой разрядности и проверяет, является ли оно палиндромом.
 // Через строку нельзя решать само собой. 
 
-int whouManyDigit = InputDigitNumber();
-int number = GenerateNumber(whouManyDigit);
-int[] matrixN = new int[whouManyDigit];
-NumToMatrix(whouManyDigit, number);
-VerificateNumber(matrixN, whouManyDigit, number);
-
-
-int InputDigitNumber()
+int InputDigitNumber()  // запрашивает разрядность числа
 {
     int inputNumber = -1;
     bool crash = true;
@@ -26,41 +19,38 @@ int InputDigitNumber()
     return inputNumber;
 }
 
-int GenerateNumber(int n)
+int GenerateNumber(int n)  // генерирует случайное число указанной с клавиатуры разрядности
 {
-    int num = new Random().Next(2, n);
+    int num = new Random().Next(Convert.ToInt32(Math.Pow(10, n-1)), Convert.ToInt32(Math.Pow(10, n)));
     return num;
 }
 
-void NumToMatrix(int digit, int length)
-{
-    for (int i = length - 1; i > 0; i--)
-    {
-        matrixN[i] = digit % 10;
-        digit = digit / 10;
-    }
-    matrixN[0] = digit;
-}
-
-void VerificateNumber(int[] palindrom, int length, int number)
+void VerificateNumber(int[] palindrom, int length, int number)  // Проверяет признаки палиндрома
 {
     bool question = true;
-    for (int i = 0; i < ((length - 1) / 2); i++)
-    {
-        for (int j = (length - 1); j > ((length - 1) / 2); j--)
-        {
-            if ((palindrom[i] != palindrom[j]))
+    for (int i = 0; i < (length / 2); i++)
+        if ((palindrom[i] != palindrom[length - 1 - i]))
             {
                 Console.WriteLine($"Число {number} не является палиндромом");
+                question = false;
                 break;
             }
-        }
-    }
-    Console.WriteLine($"Число {number} является палиндромом");
-    // if ((palindrom / 10000 == palindrom % 10) && (palindrom / 1000 % 10 == palindrom % 100 / 10))
-    //     Console.WriteLine($"{palindrom} -> да");
-    // else
-    //     Console.WriteLine($"{palindrom} -> нет");
+    if (question == true) Console.WriteLine($"Число {number} является палиндромом");
 }
 
 
+int howManyDigit = InputDigitNumber();
+int number = GenerateNumber(howManyDigit);
+int[] matrixN = new int[howManyDigit];
+NumToMatrix(howManyDigit, number);
+VerificateNumber(matrixN, howManyDigit, number);
+
+
+void NumToMatrix(int length, int digit)  // разбирает анализируемое число на разряды
+{
+    for (int i = length - 1; i >= 0; i--)
+    {
+        matrixN[i] = digit % 10;
+        digit /= 10;
+    }
+}
