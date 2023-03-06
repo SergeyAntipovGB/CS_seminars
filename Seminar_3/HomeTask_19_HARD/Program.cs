@@ -21,21 +21,18 @@ int InputDigitNumber()  // запрашивает разрядность чис�
 
 int GenerateNumber(int n)  // генерирует случайное число указанной с клавиатуры разрядности
 {
-    int num = new Random().Next(Convert.ToInt32(Math.Pow(10, n-1)), Convert.ToInt32(Math.Pow(10, n)));
+    int num = new Random().Next(Convert.ToInt32(Math.Pow(10, n-1)),
+        Convert.ToInt32(Math.Pow(10, n)));
     return num;
 }
 
 void VerificateNumber(int[] palindrom, int length, int number)  // Проверяет признаки палиндрома
 {
-    bool question = true;
+    string question = "является";
     for (int i = 0; i < (length / 2); i++)
         if ((palindrom[i] != palindrom[length - 1 - i]))
-            {
-                Console.WriteLine($"Число {number} не является палиндромом");
-                question = false;
-                break;
-            }
-    if (question == true) Console.WriteLine($"Число {number} является палиндромом");
+            question = "не является";
+    Console.WriteLine($"Число {number} {question} палиндромом");
 }
 
 
