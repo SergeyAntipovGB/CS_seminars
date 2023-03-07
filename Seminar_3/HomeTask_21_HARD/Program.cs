@@ -5,14 +5,14 @@
 
 int InputNumVectors()
 {
-    Console.WriteLine("Введите количество координатных осей > ");
+    Console.Write("Введите количество координатных осей > ");
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
 
 void InputKoord(int[] array, int length, char symbol)
 {
-    for (int i = 0; i < length - 1; i++)
+    for (int i = 0; i < length; i++)
     {
         Console.Write($"Введите значение координаты точки {symbol} на {i + 1}-й оси > ");
         array[i] = Convert.ToInt32(Console.ReadLine());
@@ -24,13 +24,13 @@ void CountDistance(int[] pointA, int[] pointB, int length)
 {
     double sum = 0;
     double var = 0;
-    for (int i = 0; i < (length - 1); i++)
+    for (int i = 0; i < length; i++)
     {
         var = Math.Pow((pointB[i] - pointA[i]), 2);
         sum += var;
     }
     sum = Math.Sqrt(sum);
-    Console.WriteLine($"Расстояние между точками А и В : {sum}");
+    Console.WriteLine($"Расстояние между точками А и В = {sum}");
 }
 
 
